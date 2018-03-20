@@ -32,4 +32,8 @@ These scripts plot figure 1 and 2 in the paper. They use the output of the last 
 3. plot_3_CLLT.py
 This script produces plot 3 in the paper: It compares the mean type value of all simulations with the actual observed value for the decades and saves a plot of the results. It also computes Spearman's rho for the correlations.
 
-4. 
+4. isch_monte_carlo_CLLT.py, nis_monte_carlo_CLLT.py, tum_monte_carlo_CLLT.py
+These scripts compute the Monte Carlo simulations for the Pneo values (which are in turn the basis for figure 4 and 5). They take as input the list of files (texts_dta.csv) and the list of occurrences of the respective pattern (isch.csv, nis.csv, and tum.csv). The number of simulations is set to 100; in the paper, 100,000 simulations are used.
+
+5. plot_4_CLLT.py, plot_5_CLLT.py
+These scripts produce plot 4 in the paper, a Pneo plot for -isch and -nis, and plot 5, a Pneo plot for -tum. They use the output of the last scripts as input, and they save a png fie to the /plots directory.
